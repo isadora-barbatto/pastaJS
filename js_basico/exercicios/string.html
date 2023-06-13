@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade sobre strings</title>
+</head>
+
+<body>
+    <!--   
+        document.write("escrevendo alguma coisa") < na tela
+
+        document.body.innerHTML
+        'escrevendo alguma coisa'
+
+        document.body.innerHTML = "trocando a frase na tela"
+        'trocando a frase na tela' < a frase foi trocada;
+
+        document.body.innerHTML += "para não perder o texto anterior, usar os simbolos += para atribuir/concatenar as novas adições"
+
+        'trocando a frase na telapara não perder o texto anterior, usar os simbolos += para atribuir/concatenar as novas adições' < novo texto que aparecerá na tela;
+
+        document.body.innerHTML += 'para quebrar linha ao final da adição <br />'
+        
+        -->
+    <script>
+        let nome = prompt("Digite seu nome completo:");
+
+        document.body.innerHTML += `Seu nome completo é: ${nome} <br />`;
+        document.body.innerHTML += `Seu nome tem: ${nome.length} letras <br />`;
+        document.body.innerHTML += `A segunda letra do seu nome é: ${nome[1]} <br />`;
+        document.body.innerHTML += `A primeira letra 'A' do seu nome está no índice: ${nome.indexOf('a')}<br />`; // o primeiro indice da letra
+        document.body.innerHTML += `A ultima letra 'A' do seu nome está no índice: ${nome.lastIndexOf('a')}<br />`; // o ultimo indice da letra;
+        document.body.innerHTML += `As três ultimas letras do seu nome são: ${nome.slice(-3)}<br />`;
+        document.body.innerHTML += `As palavras do meu nome são: ${nome.split(' ')}<br />`;
+        document.body.innerHTML += `Meu nome com letras maiúsculas é: ${nome.toUpperCase()}<br />`;
+        document.body.innerHTML += `Meu nome com letras minúsculas é: ${nome.toLowerCase()}`;
+
+    </script>
+</body>
+
+</html>
